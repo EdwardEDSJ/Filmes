@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -14,14 +14,14 @@
         android:layout_margin="20sp"
         android:text="Lista Filmes"
         android:textAllCaps="true"
-        android:textColor="#058"
+        android:textColor="#FF2828"
         android:textSize="30sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRecycleViewFilmes"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/@idRecycleViewFilmes"/>
+        android:layout_height="match_parent" />
 
 
 </LinearLayout>
