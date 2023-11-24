@@ -7,8 +7,16 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.List;
+
 public class AdapterFilmes extends RecyclerView.Adapter<AdapterFilmes.ViewHolder> {
         private Context context;
+        private List<Filmes> lstFilmes;
+
+        public AdapterFilmes(Context context, List<Filmes> lstFilmes) {
+                this.context = context;
+                this.lstFilmes = lstFilmes;
+        }
 
         @NonNull
         @Override
